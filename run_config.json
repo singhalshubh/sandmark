@@ -18,7 +18,56 @@
     }
   ],
   "benchmarks": [
-    {
+{
+      "executable": "benchmarks/graph500par/kronecker.exe",
+      "name": "kronecker_csr",
+      "tags": [
+        "10s_100s", "macro_bench"
+      ],
+      "runs": [
+	{
+	  "params": "12 30"
+	}
+      ]
+ },
+{
+      "executable": "benchmarks/graph500par/kernel1_csr.exe",
+      "name": "kernel1_csr",
+      "tags": [
+        "1s_10s", "macro_bench"
+      ],
+      "runs": [
+	{
+	  "params": "12 30"
+	}
+      ]
+ },
+{
+      "executable": "benchmarks/graph500par/kernel2_par.exe",
+      "name": "kernel2_par",
+      "tags": [
+        "1s_10s", "macro_bench"
+      ],
+      "runs": [
+	{
+	  "params": "12 30"
+	}
+      ]
+ },
+{
+      "executable": "benchmarks/graph500par/kernel3_par.exe",
+      "name": "kernel3_par",
+      "tags": [
+        "1s_10s", "macro_bench"
+      ],
+      "runs": [
+	{
+	  "params": "12 30"
+	}
+      ]
+ },
+	  
+{
       "executable": "benchmarks/graph500seq/kronecker.exe",
       "name": "kronecker",
       "tags": [
